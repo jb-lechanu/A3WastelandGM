@@ -18,9 +18,9 @@ if (!isServer) exitWith {};
 private ["_soldierTypes", "_uniformTypes", "_vestTypes", "_weaponTypes", "_group", "_position", "_rank", "_soldier"];
 
 _soldierTypes = ["C_man_polo_1_F", "C_man_polo_2_F", "C_man_polo_3_F", "C_man_polo_4_F", "C_man_polo_5_F", "C_man_polo_6_F"];
-_uniformTypes = ["U_B_CombatUniform_mcam_vest", "U_B_CombatUniform_mcam_tshirt" ,"U_B_CombatUniform_mcam"];
-_vestTypes = ["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"];
-_weaponTypes = ["arifle_TRG20_F","LMG_Mk200_F","arifle_MXM_F","arifle_MX_GL_F"];
+_uniformTypes = ["gm_xx_uniform_soldier_bdu_nogloves_80_wdl", "gm_ge_uniform_soldier_90_flk" ,"gm_ge_uniform_soldier_90_trp"];
+_vestTypes = ["gm_ge_army_vest_80_crew","gm_ge_army_vest_80_machinegunner "];
+_weaponTypes = ["gm_g3a3_oli","gm_g36e_blk","gm_m16a1_blk","gm_hmgpkm_prp","gm_rpk_wud","gm_mg3_blk","gm_mp2a1_blk","gm_mp5a2_blk","gm_mpikm72_brn"];
 
 _group = _this select 0;
 _position = _this select 1;
