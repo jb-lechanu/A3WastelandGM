@@ -37,55 +37,67 @@ for "_i" from 1 to _nbUnits do
 	removeHeadgear _unit;
 	removeGoggles _unit;
 
-	_unit addVest "gm_dk_army_vest_m00_m84_machinegunner";
+	
 
 	switch (true) do
 	{
 		// Grenadier every 3 units
 		case (_i % 3 == 0):
 		{
-			_unit addUniform "gm_xx_uniform_soldier_bdu_nogloves_80_wdl";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addWeapon "gm_akm_pallad_wud";
-			_unit addMagazine "gm_30rnd_762x39mm_b_m43_ak47_blk";
-			_unit addMagazine "gm_30rnd_762x39mm_b_m43_ak47_blk";
-			_unit addMagazine "gm_30rnd_762x39mm_b_m43_ak47_blk";
+			_unit addUniform "gm_ge_army_uniform_soldier_80_ols";
+			_unit addVest "gm_dk_army_vest_54_rifleman";
+			_unit addHeadgear "gm_ge_headgear_m62_net";
+			_unit addWeapon "gm_hk69a1_blk";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
+			_unit addMagazine "1Rnd_HE_Grenade_shell";
+			_unit addMagazine "1Rnd_HE_Grenade_shell";
+			_unit addMagazine "1Rnd_HE_Grenade_shell";
+			_unit addMagazine "1Rnd_HE_Grenade_shell";
+			_unit addWeapon "gm_p1_blk";
+			_unit addMagazine "gm_8rnd_9x19mm_b_dm11_p1_blk";
+			_unit addMagazine "gm_8rnd_9x19mm_b_dm11_p1_blk";
 		};
 		// RPG every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
-			_unit addUniform "gm_xx_uniform_soldier_bdu_nogloves_80_wdl";
+			_unit addUniform "gm_ge_army_uniform_soldier_80_ols";
+			_unit addVest "gm_dk_army_vest_54_machinegunner";
+			_unit addHeadgear "gm_ge_headgear_m62_net";
 			_unit addBackpack "gm_ge_army_backpack_80_oli";
-			_unit addWeapon "gm_mpikms72_brn";
-			_unit addMagazine "gm_30rnd_762x39mm_b_m43_ak47_blk";
-			_unit addMagazine "gm_30rnd_762x39mm_b_m43_ak47_blk";
-			_unit addMagazine "gm_30rnd_762x39mm_b_m43_ak47_blk";
-			_unit addMagazine "gm_1rnd_40mm_heat_pg7v_rpg7";
-			_unit addWeapon "gm_rpg7_prp";
-			_unit addMagazine "gm_1rnd_40mm_heat_pg7vl_rpg7";
-			_unit addMagazine "gm_1rnd_40mm_heat_pg7vl_rpg7";
+			_unit addWeapon "gm_g3a4_oli";
+			_unit addMagazine "gm_20rnd_762x51mm_b_dm41_g3_blk";
+			_unit addMagazine "gm_20rnd_762x51mm_b_dm41_g3_blk";
+			_unit addMagazine "gm_20rnd_762x51mm_b_dm41_g3_blk";
+			_unit addWeapon "gm_pzf44_2_oli"; 
+			_unit addMagazine "gm_1rnd_44x537mm_heat_dm32_pzf44_2";
+			_unit addMagazine "gm_1rnd_44x537mm_heat_dm32_pzf44_2";
+			_unit addMagazine "gm_1rnd_44x537mm_heat_dm32_pzf44_2";
 		};
 		// Rifleman 
 		default
 		{
-			_unit addUniform "gm_ge_uniform_soldier_bdu_rolled_80_wdl";
-
 			if (_unit == leader _group) then
 			{
-				_unit addWeapon "gm_svd_wud";
-				_unit addMagazine "gm_10Rnd_762x54mmR_ap_7n1_svd_blk";
-				_unit addMagazine "gm_10Rnd_762x54mmR_ap_7n1_svd_blk";
-				_unit addMagazine "gm_10Rnd_762x54mmR_ap_7n1_svd_blk";
+				_unit addUniform "gm_ge_army_uniform_soldier_80_oli";
+				_unit addVest "gm_dk_army_vest_54_crew";
+				_unit addHeadgear "gm_ge_headgear_hat_80_oli";
+				_unit addWeapon "gm_g3a4_ebr";
+				_unit addMagazine "gm_20rnd_762x51mm_b_dm41_g3_blk";
+				_unit addMagazine "gm_20rnd_762x51mm_b_dm41_g3_blk";
+				_unit addMagazine "gm_20rnd_762x51mm_b_dm41_g3_blk";
+				_unit addMagazine "gm_1rnd_67mm_heat_dm22a1_g3";
 				_unit setRank "SERGEANT";
 			}
 			else
 			{
-				_unit addMagazine "gm_30rnd_545x39mm_b_7n6_ak74_prp";
-				_unit addMagazine "gm_30rnd_545x39mm_b_7n6_ak74_prp";
-				_unit addMagazine "gm_30rnd_545x39mm_b_7n6_ak74_prp";
-				_unit addWeapon "gm_mpiak74n_brn";
+				_unit addUniform "gm_ge_army_uniform_soldier_80_ols";
+				_unit addVest "gm_dk_army_vest_54_rifleman";
+				_unit addHeadgear "gm_ge_headgear_m62_net";
+				_unit addWeapon "gm_g3a3_oli";
+				_unit addMagazine "gm_20rnd_762x51mm_b_dm41_g3_blk";
+				_unit addMagazine "gm_20rnd_762x51mm_b_dm41_g3_blk";
+				_unit addMagazine "gm_20rnd_762x51mm_b_dm41_g3_blk";
 			};
 		};
 	};
